@@ -557,14 +557,14 @@ export default function Home({ articles }) {
             Developer.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I have been digitizing Europe's Payments and Remittance sector for
+            I have been digitizing Europe&apos;s Payments and Remittance sector for
             the past ten years. As a Head of Sales and Integrations at Western
             Union (NYSE: WU), I sell and integrate the WU payments platform to
             Financial Institutions across EEA countries. My current role spans
             contract negotiations and business and compliance requirements set
             (AMLD, PSD2, GDPR) through solution design and cross-functional team
             management in a highly regulated financial industry. Previously I
-            was responsible for WU's digital expansion and development of the WU
+            was responsible for WU&apos;s digital expansion and development of the WU
             App and westernunion.com. I was integrating new payment methods,
             improving the customer onboarding and verification process and
             driving the overall WU digital product strategy for Central Europe.{' '}
@@ -573,7 +573,7 @@ export default function Home({ articles }) {
             Compliance roles in ABN Amro Bank, Royal Bank of Scotland, State
             Street Bank and Western Union.
             <br />I am also Warwick Business School (MBA program) alumnus with
-            'Merit', my thesis explores AI adoption across Financial
+            &apos;Merit&apos;, my thesis explores AI adoption across Financial
             Institutions.
           </p>
           <div className="mt-6 flex gap-6">
