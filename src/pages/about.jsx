@@ -78,7 +78,7 @@ export default function About() {
                 improving the customer onboarding and verification process and
                 driving the overall WU digital product strategy for Central
                 Europe. <br />
-                During my 14 years career I held various Business, Operations
+                During my 14 years career, I held various Business, Operations
                 and Compliance roles in ABN Amro Bank, Royal Bank of Scotland,
                 State Street Bank and Western Union.
                 {/* <br />I recently graduated from Warwick Business School MBA
@@ -88,7 +88,7 @@ export default function About() {
                 Since I was 8, I have been passionate about programming and
                 computer science. It all began with Amstrad CPC 6128 and a very
                 simple BASIC code. Later, I discovered the power of Javascript
-                and Python which I extensively mastered and applied at day to
+                and Python, which I extensively mastered and applied at day to
                 day work. I graduated from Warsaw School of Economics (Master in
                 Banking & Finance). I am also Warwick Business School alumnus
                  (MBA program) with &apos;Merit&apos;, my thesis explores AI adoption across Financial
