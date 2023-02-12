@@ -546,35 +546,43 @@ export default function Home({ articles }) {
         </title>
         <meta
           name="description"
-          content="I am Piotr, experienced senior manager, data analyst and developer."
+          content="Maciejewski, Piotr, Full Stack Developer, experienced senior manager in Payments, data analyst."
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-3xl">
           <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             Hi, I am Piotr, <br />
-            Senior Business Manager in Financial Industry, Data Scientist and
-            Developer.
+            Senior Business Manager in Financial Industry, Data Scientist <br />
+            and Developer.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I have been digitizing Europe&apos;s Payments and Remittance sector for
-            the past ten years. As a Head of Sales and Integrations at Western
-            Union (NYSE: WU), I sell and integrate the WU payments platform to
-            Financial Institutions across EEA countries. My current role spans
-            contract negotiations and business and compliance requirements set
-            (AMLD, PSD2, GDPR) through solution design and cross-functional team
+            I have been digitizing Europe&apos;s Payments and Remittance sector
+            for the past ten years. As a{' '}
+            <span className="font-bold">
+              Head of Sales and Integrations at Western Union (NYSE: WU)
+            </span>
+            , I sell and integrate the WU payments platform to Financial
+            Institutions across EEA countries. My current role spans contract
+            negotiations and business and compliance requirements set (AMLD,
+            PSD2, GDPR) through solution design and cross-functional team
             management in a highly regulated financial industry. Previously I
-            was responsible for WU&apos;s digital expansion and development of the WU
-            App and westernunion.com. I was integrating new payment methods,
-            improving the customer onboarding and verification process and
-            driving the overall WU digital product strategy for Central Europe.{' '}
-            <br />
-            During my 14 years career I held various Business, Operations and
-            Compliance roles in ABN Amro Bank, Royal Bank of Scotland, State
-            Street Bank and Western Union.
-            <br />I am also Warwick Business School (MBA program) alumnus with
-            &apos;Merit&apos;, my thesis explores AI adoption across Financial
-            Institutions.
+            was responsible for WU&apos;s digital expansion and development of
+            the WU App and westernunion.com. I was integrating new payment
+            methods, improving the customer onboarding and verification process
+            and driving the overall WU digital product strategy for Central
+            Europe. <br />
+            During my 14 years career I held various{' '}
+            <span className="font-bold">
+              Business, Operations and Compliance roles in ABN Amro Bank, Royal
+              Bank of Scotland, State Street Bank and Western Union.
+            </span>
+            <br />I am also{' '}
+            <span className="font-bold">
+              Warwick Business School (MBA program) alumnus with
+              &apos;Merit&apos;
+            </span>
+            , my thesis explores AI adoption across Financial Institutions.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink

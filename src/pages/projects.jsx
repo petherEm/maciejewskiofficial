@@ -19,6 +19,9 @@ import logoBankApp from '@/images/logos/bankapp.jpeg'
 import logoFood from '@/images/logos/food.jpeg'
 import logoIkomers from '@/images/logos/ikomers.jpeg'
 import logoPerso from '@/images/logos/perso.jpeg'
+import logoGPT from '@/images/logos/betterGPT.png'
+
+import trueWU from '@/images/logos/trueWU.png'
 
 
 
@@ -34,6 +37,20 @@ const myDev = [
 ]
 
 const projects = [
+  {
+    name: 'ChatGPT bot',
+    description:
+      'OpenAI GPT-3 powered chatbot with NextJS, TailwindCSS, Firebase and NextAuth',
+    link: { href: 'https://bettergpt.vabank.dev', label: 'bettergpt.vabank.dev' },
+    logo: logoGPT,
+  },
+  {
+    name: 'WU Bank clone',
+    description:
+      'A clone of the WU Bank Poland website with NextJS, TailwindCSS, Firebase and NextAuth',
+    link: { href: 'https://truewubankpl.vercel.app/en', label: 'truewubankpl.vercel.app/en' },
+    logo: trueWU,
+  },
   {
     name: 'Better AirB&B',
     description:
