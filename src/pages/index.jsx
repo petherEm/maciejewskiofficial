@@ -371,32 +371,32 @@ function Education() {
     },
     {
       name: 'Node.js',
-      level: 'Medium',
+      level: 'Intermediate',
       icon: logoNode,
     },
     {
       name: 'Pandas',
-      level: 'Medium',
+      level: 'Intermediate',
       icon: logoPandas,
     },
     {
       name: 'Numpy',
-      level: 'Medium',
+      level: 'Intermediate',
       icon: logoNumpy,
     },
     {
       name: 'Mapbox',
-      level: 'Medium',
+      level: 'Intermediate',
       icon: logoMapbox,
     },
     {
       name: 'Firebase',
-      level: 'Medium',
+      level: 'Intermediate',
       icon: logoFirebase,
     },
     {
       name: 'MongoDB',
-      level: 'Medium',
+      level: 'Intermediate',
       icon: logoMongo,
     },
   ]

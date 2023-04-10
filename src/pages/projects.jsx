@@ -20,6 +20,8 @@ import logoFood from '@/images/logos/food.jpeg'
 import logoIkomers from '@/images/logos/ikomers.jpeg'
 import logoPerso from '@/images/logos/perso.jpeg'
 import logoGPT from '@/images/logos/betterGPT.png'
+import logoInpost from '@/images/logos/inpost.jpg'
+import logoFlix from '@/images/logos/flix.jpg'
 
 import trueWU from '@/images/logos/trueWU.png'
 
@@ -43,6 +45,7 @@ const projects = [
       'OpenAI GPT-3 powered chatbot with NextJS, TailwindCSS, Firebase and NextAuth',
     link: { href: 'https://bettergpt.vabank.dev', label: 'bettergpt.vabank.dev' },
     logo: logoGPT,
+    tags: '#AI, #GPT-3, #OpenAI'
   },
   {
     name: 'WU Bank clone',
@@ -50,6 +53,7 @@ const projects = [
       'A clone of the WU Bank Poland website with NextJS, TailwindCSS, Firebase and NextAuth',
     link: { href: 'https://truewubankpl.vercel.app/en', label: 'truewubankpl.vercel.app/en' },
     logo: trueWU,
+    tags: '#banking, #eCommerce, #payments'
   },
   {
     name: 'Better AirB&B',
@@ -57,6 +61,7 @@ const projects = [
       'A newer version of AirB&B with NextJS, TailwindCSS, Mapbox and Calendar.',
     link: { href: 'https://arbb.vercel.app/', label: 'arbb.vercel.app' },
     logo: logoAirBnB,
+    tags: '#eCommerce, #travel, #booking'
   },
   {
     name: 'payIntel - new social media',
@@ -67,6 +72,7 @@ const projects = [
       label: 'pay-intel.vercel.app',
     },
     logo: logoPayIntel,
+    tags: '#payments, #social, #eCommerce'
   },
   {
     name: 'Banking App landing page',
@@ -77,6 +83,7 @@ const projects = [
       label: 'bankapp-seven.vercel.app',
     },
     logo: logoBankApp,
+    tags: '#banking, #payments, #eCommerce'
   },
   {
     name: 'Hexagon Layer with NextJS',
@@ -87,6 +94,7 @@ const projects = [
       label: 'hexagonlayer-next.vercel.app',
     },
     logo: logoHexagon,
+    tags: '#maps, #data, #visualization'
   },
   {
     name: 'eCommerce on Sanity',
@@ -96,6 +104,17 @@ const projects = [
       label: 'nextcommerce-one-mu.vercel.app',
     },
     logo: logoIkomers,
+    tags: '#eCommerce, #shop, #cms'
+  },
+  {
+    name: 'Parcel machine finder',
+    description: 'inPost parcel machine finder built with NextJS, TailwindCSS, Mapbox and DeckGL.',
+    link: {
+      href: 'https://inpostfinder.vabank.dev/map',
+      label: 'inpostfinder.vabank.dev/map',
+    },
+    logo: logoInpost,
+    tags: '#maps, #data, #visualization'
   },
   {
     name: 'Food & Cuisine Blog',
@@ -105,6 +124,7 @@ const projects = [
       label: 'fudtruck.vercel.app',
     },
     logo: logoFood,
+    tags: '#blog, #food, #recipes'
   },
   {
     name: 'Amazon Clone',
@@ -115,6 +135,7 @@ const projects = [
       label: 'amazon4-two.vercel.app',
     },
     logo: logoAmazon,
+    tags: '#eCommerce, #shop, #payments'
   },
   {
     name: 'Netflix Clone',
@@ -124,6 +145,17 @@ const projects = [
       label: 'newnetflix-5355c.web.app',
     },
     logo: logoNetflix,
+    tags: '#streaming, #social, #eCommerce'
+  },
+  {
+    name: 'Movie Review App',
+    description: 'Vanilla JS, TailwindCSS and TMDB API.',
+    link: {
+      href: 'https://flix-project-phi.vercel.app/',
+      label: 'flix-project-phi.vercel.app',
+    },
+    logo: logoFlix,
+    tags: '#streaming, #social, #eCommerce'
   },
   {
     name: 'Weather App',
@@ -133,6 +165,7 @@ const projects = [
       label: 'nextweather-plum.vercel.app',
     },
     logo: logoWeather,
+    tags: '#weather, #maps, #data'
   },
 ]
 
@@ -174,6 +207,12 @@ export default function Projects() {
         >
           {projects.map((project) => (
             <Card as="li" key={project.name}>
+              <div>
+              <h2 className="mt-6 mb-2 text-base font-semibold text-teal-800 dark:text-teal-400">
+                <Card.Link href={project.link.href}>{project.tags}</Card.Link>
+              </h2>
+
+              </div>
               <div className="h-42 w-58 relative z-10 flex items-center justify-center rounded-lg bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
                 <Image src={project.logo} alt="" className="" unoptimized />
               </div>
