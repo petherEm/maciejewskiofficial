@@ -20,12 +20,11 @@ import logoFood from '@/images/logos/food.jpeg'
 import logoIkomers from '@/images/logos/ikomers.jpeg'
 import logoPerso from '@/images/logos/perso.jpeg'
 import logoGPT from '@/images/logos/betterGPT.png'
-import logoInpost from '@/images/logos/inpost.jpg'
+import logoInpost from '@/images/logos/inpost2.jpg'
 import logoFlix from '@/images/logos/flix.jpg'
+import logoAIweather from '@/images/logos/aiweather.jpg'
 
 import trueWU from '@/images/logos/trueWU.png'
-
-
 
 const myDev = [
   {
@@ -35,25 +34,41 @@ const myDev = [
     link: { href: 'https://www.piotrdev.com/', label: 'www.piotrdev.com' },
     logo: logoPerso,
   },
-
 ]
 
 const projects = [
   {
+    name: 'AI Weather App',
+    description:
+      'OpenAI GPT-3.5 powered AI Weather narration with NextJS, TailwindCSS, StepZen and Typescript',
+    link: {
+      href: 'https://aiweather.vabank.me/',
+      label: 'aiweather.vabank.me',
+    },
+    logo: logoAIweather,
+    tags: '#AI, #GPT-3.5, #TypeScript, #OpenAI',
+  },
+  {
     name: 'ChatGPT bot',
     description:
       'OpenAI GPT-3 powered chatbot with NextJS, TailwindCSS, Firebase and NextAuth',
-    link: { href: 'https://bettergpt.vabank.dev', label: 'bettergpt.vabank.dev' },
+    link: {
+      href: 'https://bettergpt.vabank.dev',
+      label: 'bettergpt.vabank.dev',
+    },
     logo: logoGPT,
-    tags: '#AI, #GPT-3, #OpenAI'
+    tags: '#AI, #GPT-3, #OpenAI',
   },
   {
     name: 'WU Bank clone',
     description:
       'A clone of the WU Bank Poland website with NextJS, TailwindCSS, Firebase and NextAuth',
-    link: { href: 'https://truewubankpl.vercel.app/en', label: 'truewubankpl.vercel.app/en' },
+    link: {
+      href: 'https://truewubankpl.vercel.app/en',
+      label: 'truewubankpl.vercel.app/en',
+    },
     logo: trueWU,
-    tags: '#banking, #eCommerce, #payments'
+    tags: '#banking, #eCommerce, #payments',
   },
   {
     name: 'Better AirB&B',
@@ -61,7 +76,7 @@ const projects = [
       'A newer version of AirB&B with NextJS, TailwindCSS, Mapbox and Calendar.',
     link: { href: 'https://arbb.vercel.app/', label: 'arbb.vercel.app' },
     logo: logoAirBnB,
-    tags: '#eCommerce, #travel, #booking'
+    tags: '#eCommerce, #travel, #booking',
   },
   {
     name: 'payIntel - new social media',
@@ -72,7 +87,7 @@ const projects = [
       label: 'pay-intel.vercel.app',
     },
     logo: logoPayIntel,
-    tags: '#payments, #social, #eCommerce'
+    tags: '#payments, #social, #eCommerce',
   },
   {
     name: 'Banking App landing page',
@@ -83,7 +98,7 @@ const projects = [
       label: 'bankapp-seven.vercel.app',
     },
     logo: logoBankApp,
-    tags: '#banking, #payments, #eCommerce'
+    tags: '#banking, #payments, #eCommerce',
   },
   {
     name: 'Hexagon Layer with NextJS',
@@ -94,7 +109,7 @@ const projects = [
       label: 'hexagonlayer-next.vercel.app',
     },
     logo: logoHexagon,
-    tags: '#maps, #data, #visualization'
+    tags: '#maps, #data, #visualization',
   },
   {
     name: 'eCommerce on Sanity',
@@ -104,17 +119,18 @@ const projects = [
       label: 'nextcommerce-one-mu.vercel.app',
     },
     logo: logoIkomers,
-    tags: '#eCommerce, #shop, #cms'
+    tags: '#eCommerce, #shop, #cms',
   },
   {
     name: 'Parcel machine finder',
-    description: 'inPost parcel machine finder built with NextJS, TailwindCSS, Mapbox and DeckGL.',
+    description:
+      'inPost parcel machine finder built with NextJS, TailwindCSS, Mapbox and DeckGL.',
     link: {
       href: 'https://inpostfinder.vabank.dev/map',
       label: 'inpostfinder.vabank.dev/map',
     },
     logo: logoInpost,
-    tags: '#maps, #data, #visualization'
+    tags: '#maps, #data, #visualization',
   },
   {
     name: 'Food & Cuisine Blog',
@@ -124,7 +140,7 @@ const projects = [
       label: 'fudtruck.vercel.app',
     },
     logo: logoFood,
-    tags: '#blog, #food, #recipes'
+    tags: '#blog, #food, #recipes',
   },
   {
     name: 'Amazon Clone',
@@ -135,7 +151,7 @@ const projects = [
       label: 'amazon4-two.vercel.app',
     },
     logo: logoAmazon,
-    tags: '#eCommerce, #shop, #payments'
+    tags: '#eCommerce, #shop, #payments',
   },
   {
     name: 'Netflix Clone',
@@ -145,7 +161,7 @@ const projects = [
       label: 'newnetflix-5355c.web.app',
     },
     logo: logoNetflix,
-    tags: '#streaming, #social, #eCommerce'
+    tags: '#streaming, #social, #eCommerce',
   },
   {
     name: 'Movie Review App',
@@ -155,7 +171,7 @@ const projects = [
       label: 'flix-project-phi.vercel.app',
     },
     logo: logoFlix,
-    tags: '#streaming, #social, #eCommerce'
+    tags: '#streaming, #social, #eCommerce',
   },
   {
     name: 'Weather App',
@@ -165,7 +181,7 @@ const projects = [
       label: 'nextweather-plum.vercel.app',
     },
     logo: logoWeather,
-    tags: '#weather, #maps, #data'
+    tags: '#weather, #maps, #data',
   },
 ]
 
@@ -208,10 +224,9 @@ export default function Projects() {
           {projects.map((project) => (
             <Card as="li" key={project.name}>
               <div>
-              <h2 className="mt-6 mb-2 text-base font-semibold text-teal-800 dark:text-teal-400">
-                <Card.Link href={project.link.href}>{project.tags}</Card.Link>
-              </h2>
-
+                <h2 className="mt-6 mb-2 text-base font-semibold text-teal-800 dark:text-teal-400">
+                  <Card.Link href={project.link.href}>{project.tags}</Card.Link>
+                </h2>
               </div>
               <div className="h-42 w-58 relative z-10 flex items-center justify-center rounded-lg bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
                 <Image src={project.logo} alt="" className="" unoptimized />
@@ -228,9 +243,11 @@ export default function Projects() {
           ))}
         </ul>
 
-        <hr className="h-2 text-zinc-500 mt-6 mb-6" />
+        <hr className="mt-6 mb-6 h-2 text-zinc-500" />
 
-        <h2 className="text-3xl text-slate-400 font-bold mt-8 mb-6">For more details visit my dev website - www.piotrdev.com</h2>
+        <h2 className="mt-8 mb-6 text-3xl font-bold text-slate-400">
+          For more details visit my dev website - www.piotrdev.com
+        </h2>
         <ul
           role="list"
           className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
