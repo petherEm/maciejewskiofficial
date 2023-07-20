@@ -23,6 +23,10 @@ import logoGPT from '@/images/logos/betterGPT.png'
 import logoInpost from '@/images/logos/inpost2.jpg'
 import logoFlix from '@/images/logos/flix.jpg'
 import logoAIweather from '@/images/logos/aiweather.jpg'
+import logoWUImprove from '@/images/logos/wuimprove.jpg'
+import logoCarshow from '@/images/logos/carshow.jpg'
+import logoPizzaDeliv from '@/images/logos/pizzadeliv.jpg'
+import logoCorseTorse from '@/images/logos/corsetorse.jpg'
 
 import trueWU from '@/images/logos/trueWU.png'
 
@@ -37,6 +41,39 @@ const myDev = [
 ]
 
 const projects = [
+  {
+    name: 'Corse Torse',
+    description:
+      'OpenAI GPT-3.5 powered Training App and calories counter',
+    link: {
+      href: 'https://mytraining.vabank.me/',
+      label: 'mytraining.vabank.me',
+    },
+    logo: logoCorseTorse,
+    tags: '#AI, #GPT-3.5, #NextAuth, #OpenAI',
+  },
+  {
+    name: 'Carshow Rental',
+    description:
+      'Rental company website training project with RapidAPI and latest Next.js 13 API features, plus TailwindCSS.',
+    link: {
+      href: 'https://carshow-kappa.vercel.app',
+      label: 'carshow-kappa.vercel.app',
+    },
+    logo: logoCarshow,
+    tags: '#eCommerce, #rapidAPI ',
+  },
+  {
+    name: 'WU send money',
+    description:
+      'Improvements to WU customer journey, price engine and payout methods, with NextJS, TailwindCSS, and Zustand.',
+    link: {
+      href: 'https://wuimprove.vercel.app',
+      label: 'wuimprove.vercel.app',
+    },
+    logo: logoWUImprove,
+    tags: '#banking, #payments, #eCommerce',
+  },
   {
     name: 'AI Weather App',
     description:
@@ -58,6 +95,17 @@ const projects = [
     },
     logo: logoGPT,
     tags: '#AI, #GPT-3, #OpenAI',
+  },
+  {
+    name: 'Pizza Pierre',
+    description:
+      'Pizza Pierre is a pizza delivery website built with NextJS and TailwindCSS.',
+    link: {
+      href: 'https://pizzadelivery-five.vercel.app/',
+      label: 'pizzadelivery-five.vercel.app',
+    },
+    logo: logoPizzaDeliv,
+    tags: '#eCommerce, #food, #delivery',
   },
   {
     name: 'WU Bank clone',
@@ -232,7 +280,7 @@ export default function Projects() {
                 <Image src={project.logo} alt="" className="" unoptimized />
               </div>
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                <Card.Link href={project.link.href}>{project.name}</Card.Link>
+                <Card.Link href={project.link.href} target="_blank" noopener noreferrer>{project.name}</Card.Link>
               </h2>
               <Card.Description>{project.description}</Card.Description>
               <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">

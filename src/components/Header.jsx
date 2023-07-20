@@ -414,11 +414,14 @@ export function Header() {
                 <MobileNavigation className="pointer-events-auto md:hidden" />
                 <DesktopNavigation className="pointer-events-auto hidden md:block" />
               </div>
-              <div className="flex justify-end md:flex-1">
+              <div className="flex items-center space-x-2 justify-end md:flex-1">
                 <div className="pointer-events-auto">
                   <ModeToggle />
                 </div>
+                {/* <div className="text-white">FR</div>
+                <div className="text-white">ES</div> */}
               </div>
+              
             </div>
           </Container>
         </div>

@@ -46,7 +46,7 @@ export default function ArticlesIndex({ articles }) {
       </Head>
       <SimpleLayout
         title="Data-driven, rigorous personal view on Technology, Business and Finance."
-        intro="Here I share my thoughts on business, payments, programming and leadership trends and researches. Some of the posts and researches are inspired by my MBA assignments at Warwick Business School. I truly enjoyed my MBA program 2019 - 2021 at WBS, and I am missing the academic research and writing approach and the discussions with my MBA friends. I will be also adding tutorials and guides on how to use some of the programming frameworks and libraries."
+        intro="Here I share my thoughts on business, technology, payments and programming trends and researches. Some of the posts and researches are inspired by my MBA assignments at Warwick Business School. I truly enjoyed my MBA program 2019 - 2021 at WBS, and I am missing the academic research and writing approach and the discussions with my MBA friends. I will be also adding tutorials and guides on how to use some of the latest tech, programming frameworks and libraries."
       >
         <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
           <div className="flex max-w-3xl flex-col space-y-16">

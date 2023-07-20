@@ -1,0 +1,83 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import Image from 'next/image'
+
+export const meta = {
+  author: 'Piotr',
+  date: '2023-07-06',
+  title: 'Get full address from geo coordinates using Python for free.',
+  description:
+    'How to efficiently retrieve full address from geo coordinates using Nominatim and RateLimiter.',
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+Recently, I have been tasked to retrive full addresses from geo coordinates for over 4k records.
+**Nominatim** is a great tool for this task, but it has a limit of 1 request per second.
+
+<Image src="/blog/get_address.jpg" width={800} height={400} alt="" />
+
+## IMPORT LIBRARIES
+
+```python
+import pandas as pd
+from geopy.geocoders import Nominatim
+from geopy.extra.rate_limiter import RateLimiter
+```
+
+## IMPORT DATA
+
+```python
+df = pd.read_csv("france_ria_locations.csv")
+```
+
+<Image src="/blog/GetAddress_1.png" width={800} height={400} alt="" />
+
+I imported csv file with geo coordinates to pandas DataFrame and I already had **coords** pair as a string.
+So, we will need to convert it to a tuple of floats, but first let's initialize **Nominatim** geocoder.
+
+```python
+# Initialize the geocoder
+geolocator = Nominatim(user_agent="myGeocoder")
+```
+
+and create a rate limiter
+
+```python
+# Create a rate limiter
+geocode = RateLimiter(geolocator.reverse, min_delay_seconds=1)
+```
+
+## CONVERT COORDS TO TUPLE OF FLOATS
+
+```python
+## convert 'coords' from string to a tuple of floats
+df['coords'] = df['coords'].apply(lambda x: tuple(map(float, x.strip('()').split(','))))
+```
+
+The next step is to add 'location' column to DataFrame by applying **Nominatim geocoder** to 'coords' column.
+
+```python
+# Add 'location' column to dataframe by applying geocode to 'coords' column
+df['location'] = df['coords'].apply(geocode)
+```
+
+## SHAPING THE DATAFRAME
+
+```python
+# Add 'address', 'city' and 'zip' columns
+df['address'] = df['location'].apply(lambda loc: loc.raw['address']['road'] if 'road' in loc.raw['address'] else None)
+df['city'] = df['location'].apply(lambda loc: loc.raw['address']['town'] if 'town' in loc.raw['address'] else None)
+df['zip'] = df['location'].apply(lambda loc: loc.raw['address']['postcode'] if 'postcode' in loc.raw['address'] else None)
+
+```
+
+<Image src="/blog/GetAddress_2.png" width={800} height={400} alt="" />
+
+## SAVE TO CSV
+
+```python
+# Save to csv
+df.to_csv('france_ria_locations_with_address.csv', index=False)
+```
+
+Happy coding!
