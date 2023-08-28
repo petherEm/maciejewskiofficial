@@ -78,7 +78,7 @@ export default function About() {
                 improving the customer onboarding and verification process and
                 driving the overall WU digital product strategy for Central
                 Europe. <br />
-                During my 14 years career, I held various Business, Operations
+                During my 15 years career, I held various Business, Operations
                 and Compliance roles in ABN Amro Bank, Royal Bank of Scotland,
                 State Street Bank and Western Union.
                 {/* <br />I recently graduated from Warwick Business School MBA

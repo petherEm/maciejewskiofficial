@@ -37,7 +37,42 @@ export default function Uses() {
         intro="A short summary of key projects, major integrations and business development achievements."
       >
         <div className="space-y-20">
-          <ToolsSection title="Head of Sales & Integrations at Western Union" years="2021 - present">
+          <ToolsSection
+            title="Head of Go-To-Market, Digital Bank Poland and Romania | Head of Baltics at Western Union"
+            years="2023 - present"
+          >
+            <Tool title="As Head of Go-To-Market: Leading the creation and implementation of Go-To-Market strategies for Western Union Digital Bank in Poland and Romania, employing the latest AI technologies and programming methodologies to optimize the processes and customer experience.">
+              Developed and implemented an internal Web App dashboard using
+              Next.js/React.js for geographical data visualization,
+              demonstrating both strategic insights and practical technical
+              capabilities.
+              <br />
+              Driving product development and enhancements, tailoring products
+              to customer needs and market trends <br />
+              Established and nurtured key digital partnerships to foster
+              collaboration and mutual business growth. <br />
+              Leveraging advanced data analytics and programming skills to
+              optimize strategies, support data-driven decisions, and monitor
+              the bank's performance. <br />
+              Developing competitive pricing strategies, balancing profitability
+              with customer acquisition and retention.
+            </Tool>
+            <Tool title="As Head of Baltics: Overseeing revenue development, driving sustainable growth through strategic initiatives.">
+              Negotiated multimillion-dollar contracts with Tier-1 financial
+              institutions from the region, fostering relationships with key
+              stakeholders and contributing to the financial health of the
+              organization. <br />
+              Directing digital product enhancements, staying abreast of
+              technological advancements to maintain a competitive edge. <br />
+              Managing operations across the Baltic region, leveraging AI and
+              the latest technologies to ensure efficiency and compliance with
+              all relevant standards and regulations. <br />
+            </Tool>
+          </ToolsSection>
+          <ToolsSection
+            title="Head of Sales & Integrations at Western Union"
+            years="2021 - 2023"
+          >
             <Tool
               title="Signed, executed and launched 3 Key Account contracts with
               Financial Institutions in Germany and Switzerland ensuring multimilion incremental revenue stream for WU."
@@ -65,7 +100,10 @@ export default function Uses() {
               presented to the WU Executive team and was approved.
             </Tool>
           </ToolsSection>
-          <ToolsSection title="Digital Product Manager - Strategic Partnerships at Western Union" years="2018 - 2021">
+          <ToolsSection
+            title="Digital Product Manager - Strategic Partnerships at Western Union"
+            years="2018 - 2021"
+          >
             <Tool title="Signed and executed contracts with 2 primary digital payment solutions in Germany, Poland and Switzerland">
               New payment methods were the key driver to new customer
               acquisition and retention across WU products. I was responsible
@@ -89,7 +127,10 @@ export default function Uses() {
             </Tool>
           </ToolsSection>
 
-          <ToolsSection title="Business Development Manager at Western Union" years="2014 - 2018">
+          <ToolsSection
+            title="Business Development Manager at Western Union"
+            years="2014 - 2018"
+          >
             <Tool title="Signed 12 WU exclusive agent contracts in 4 years with major organisations across Central Europe, consistently delivering WU revenue targets and appropriate network quality.">
               Successfully managed the Croatian and Hungarian markets improving
               WU market share position in both countries. Led 14 Key Accounts
@@ -97,7 +138,10 @@ export default function Uses() {
               a proven track of renewed WU contracts and new agent signings.
             </Tool>
           </ToolsSection>
-          <ToolsSection title="Compliance Officer, at Western Union" years="2012 - 2014">
+          <ToolsSection
+            title="Compliance Officer, at Western Union"
+            years="2012 - 2014"
+          >
             <Tool title="Developed and updated WU Central Eastern Europe Compliance policies and procedures. Onboarded 10+ WU agents in line with PSD2 and 4th AML Directive requirements. Built several analytics tools in Python & VBA ensuring the best data visualisation for Risk Control Teams.">
               Consumer Protection, Compliance & Ethics Officer responsible for
               Key Accounts (Banking and Retail) in CEE region. Conducting agent
@@ -107,7 +151,10 @@ export default function Uses() {
               contact for Regulators, Police, Prosecutors and Tax Office in CEE.
             </Tool>
           </ToolsSection>
-          <ToolsSection title="Corporate Compliance, at State Street Bank Luxembourg" years="2011 - 2012">
+          <ToolsSection
+            title="Corporate Compliance, at State Street Bank Luxembourg"
+            years="2011 - 2012"
+          >
             <Tool title=" Member of the State Street Bank Luxembourg Regulatory Steering Committee, responsible for Regulatory updates and Regulatory risk assessment. Member and co-organiser of SSBL Group Oversight Committee, dedicated to Group supervision over European State Street Bank branches.">
               Led several Due Diligence analyses on High Risk corporate and
               individual investors resulting in minimizing regulatory risk
@@ -117,7 +164,10 @@ export default function Uses() {
               supervision of the Suspicious Transaction Monitoring process.
             </Tool>
           </ToolsSection>
-          <ToolsSection title="Senior AML Analyst, at Royal Bank of Scotland (NatWest Group)" years="2008 - 2011">
+          <ToolsSection
+            title="Senior AML Analyst, at Royal Bank of Scotland (NatWest Group)"
+            years="2008 - 2011"
+          >
             <Tool title="Leading the team of 4 people, responsible for extensive Due Diligence of corporate clients in France, Belgium and Luxembourg.">
               Provided several onsite trainings in Luxembourg directly with
               high-value corporate clients. Contributed significantly to RBS

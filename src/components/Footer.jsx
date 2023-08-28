@@ -28,7 +28,7 @@ export function Footer() {
                 
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; {new Date().getFullYear()} Piotr Maciejewski - PiotrDev. All rights
+                &copy; {new Date().getFullYear()} Piotr Maciejewski - vabank.dev. All rights
                 reserved.
               </p>
             </div>

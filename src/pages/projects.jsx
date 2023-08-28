@@ -27,24 +27,46 @@ import logoWUImprove from '@/images/logos/wuimprove.jpg'
 import logoCarshow from '@/images/logos/carshow.jpg'
 import logoPizzaDeliv from '@/images/logos/pizzadeliv.jpg'
 import logoCorseTorse from '@/images/logos/corsetorse.jpg'
-
+import logoVabankPorfolio from '@/images/logos/vabankportfolio.png'
+import logoNikeClone from '@/images/logos/nikeclone.png'
+import logoGrafbase from '@/images/logos/grafbaseproject.png'
 import trueWU from '@/images/logos/trueWU.png'
 
 const myDev = [
   {
-    name: 'My Dev Website',
-    description:
-      'Come and visit my dev website to see my latest projects and blog posts.',
-    link: { href: 'https://www.piotrdev.com/', label: 'www.piotrdev.com' },
-    logo: logoPerso,
+    name: 'My Full Stack Agency Website',
+    description: 'Come and visit my Full Stack Agency website.',
+    link: { href: 'https://www.vabank.dev', label: 'www.vabank.dev' },
+    logo: logoVabankPorfolio,
   },
 ]
 
 const projects = [
   {
-    name: 'Corse Torse',
+    name: 'Developedia - Dev showcase',
     description:
-      'OpenAI GPT-3.5 powered Training App and calories counter',
+      'JSMastery project mastering Grafbase, Next.js, NextAuth and TailwindCSS',
+    link: {
+      href: 'https://grafbaseproject.vercel.app/',
+      label: 'grafbaseproject.vercel.app',
+    },
+    logo: logoGrafbase,
+    tags: '#graphQL, Next.js 13.4, NextAuth',
+  },
+  {
+    name: 'Nike Clone',
+    description:
+      'Mastering TailwindCSS and Next.js through Nike Clone project.',
+    link: {
+      href: 'https://nikeclone-nine.vercel.app/',
+      label: 'nikeclone-nine.vercel.app',
+    },
+    logo: logoNikeClone,
+    tags: '#TailwindCSS, Next.js 13.4',
+  },
+  {
+    name: 'Corse Torse',
+    description: 'OpenAI GPT-3.5 powered Training App and calories counter',
     link: {
       href: 'https://mytraining.vabank.me/',
       label: 'mytraining.vabank.me',
@@ -231,6 +253,13 @@ const projects = [
     logo: logoWeather,
     tags: '#weather, #maps, #data',
   },
+  {
+    name: 'My Dev Website',
+    description:
+      'Come and visit my dev website to see my latest projects and blog posts.',
+    link: { href: 'https://www.piotrdev.com/', label: 'www.piotrdev.com' },
+    logo: logoPerso,
+  },
 ]
 
 function LinkIcon(props) {
@@ -280,7 +309,14 @@ export default function Projects() {
                 <Image src={project.logo} alt="" className="" unoptimized />
               </div>
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                <Card.Link href={project.link.href} target="_blank" noopener noreferrer>{project.name}</Card.Link>
+                <Card.Link
+                  href={project.link.href}
+                  target="_blank"
+                  noopener
+                  noreferrer
+                >
+                  {project.name}
+                </Card.Link>
               </h2>
               <Card.Description>{project.description}</Card.Description>
               <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
@@ -294,7 +330,7 @@ export default function Projects() {
         <hr className="mt-6 mb-6 h-2 text-zinc-500" />
 
         <h2 className="mt-8 mb-6 text-3xl font-bold text-slate-400">
-          For more details visit my dev website - www.piotrdev.com
+          See my Full Stack Agency website
         </h2>
         <ul
           role="list"

@@ -11,6 +11,7 @@ import {
   InstagramIcon,
   GitHubIcon,
   LinkedInIcon,
+  ExternalLinkIcon,
 } from '@/components/SocialIcons'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
@@ -24,6 +25,7 @@ import logoWBS from '@/images/logos/WBS.webp'
 import logoSGH from '@/images/logos/SGH.webp'
 import logoPython from '@/images/logos/python.png'
 import logoJS from '@/images/logos/JS.png'
+import logoTS from '@/images/logos/ts.png'
 import logoReact from '@/images/logos/react.png'
 import logoMapbox from '@/images/logos/mapbox.webp'
 import logoTailwind from '@/images/logos/tailwind2.png'
@@ -32,6 +34,8 @@ import logoPandas from '@/images/logos/pandas.png'
 import logoNumpy from '@/images/logos/numpy.png'
 import logoMongo from '@/images/logos/mongodb.png'
 import logoFirebase from '@/images/logos/firebase.png'
+import logoOpenAI from '@/images/logos/openai.png'
+import logoSanity from '@/images/logos/sanity.png'
 
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
@@ -212,13 +216,18 @@ function Resume() {
   let resume = [
     {
       company: 'Western Union',
+      title:
+        'Head of Go-To-Market, Digital Bank Poland and Romania | Head of Baltics',
+      logo: logoWU,
+      start: '2023',
+      end: 'present',
+    },
+    {
+      company: 'Western Union',
       title: 'Head of Tech Sales & Integrations, Central Europe',
       logo: logoWU,
       start: '2021',
-      end: {
-        label: 'present',
-        dateTime: new Date().getFullYear(),
-      },
+      end: '2023',
     },
     {
       company: 'Western Union',
@@ -354,6 +363,11 @@ function Education() {
       icon: logoJS,
     },
     {
+      name: 'TypeScript',
+      level: 'Advanced',
+      icon: logoTS,
+    },
+    {
       name: 'Python',
       level: 'Advanced',
       icon: logoPython,
@@ -398,6 +412,16 @@ function Education() {
       name: 'MongoDB',
       level: 'Intermediate',
       icon: logoMongo,
+    },
+    {
+      name: 'OpenAI',
+      level: 'Intermediate',
+      icon: logoOpenAI,
+    },
+    {
+      name: 'Sanity.io',
+      level: 'Intermediate',
+      icon: logoSanity,
     },
   ]
 
@@ -554,36 +578,36 @@ export default function Home({ articles }) {
           <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             Hi, I am Piotr, <br />
             Senior Business Manager in Financial Industry, Data Scientist <br />
-            and Developer.
+            and Full Stack Developer.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I have been digitizing Europe&apos;s Payments and Remittance sector
-            for the past ten years. As a{' '}
+            Throughout my career, I have executed 20+ strategic contracts and
+            managed critical projects across diverse sectors, including{' '}
             <span className="font-bold">
-              Head of Sales and Integrations at Western Union (NYSE: WU)
-            </span>
-            , I sell and integrate the WU payments platform to Financial
-            Institutions across EEA countries. My current role spans contract
-            negotiations and business and compliance requirements set (AMLD,
-            PSD2, GDPR) through solution design and cross-functional team
-            management in a highly regulated financial industry. Previously I
-            was responsible for WU&apos;s digital expansion and development of
-            the WU App and westernunion.com. I was integrating new payment
-            methods, improving the customer onboarding and verification process
-            and driving the overall WU digital product strategy for Central
-            Europe. <br />
-            During my 14 years career I held various{' '}
+              Business, Digital Product, Operations, and Compliance, notably at
+              Western Union (FT500), State Street Bank Luxembourg and the Royal
+              Bank of Scotland.
+            </span>{' '}
+            Over 15 years, I have delivered multiple multimillion-dollar revenue
+            streams. <br />
+            As a results-driven and forward-thinking Senior Leader in Payments,
+            Banking & Finance, I excel at the intersection of business strategy
+            and advanced technologies. With expertise in{' '}
             <span className="font-bold">
-              Business, Operations and Compliance roles in ABN Amro Bank, Royal
-              Bank of Scotland, State Street Bank and Western Union.
-            </span>
-            <br />I am also{' '}
+              AI, Full Stack Development, and Python programming,
+            </span>{' '}
+            I leverage data science to enhance decision-making, optimize
+            processes, and lead innovative web development projects.
+            <br />
+            An alumnus of{' '}
             <span className="font-bold">
-              Warwick Business School (MBA program) alumnus with
-              &apos;Merit&apos;
-            </span>
-            , my thesis explores AI adoption across Financial Institutions.
+              Warwick Business School with an MBA and “Merit” recognition,{' '}
+            </span>{' '}
+            my unique blend of business acumen and technical expertise positions
+            me at the forefront of modern management practices in Payments,
+            Banking & Finance.
           </p>
+
           <div className="mt-6 flex gap-6">
             <SocialLink
               href="https://www.linkedin.com/in/piotrek-maciejewski/"
@@ -595,6 +619,7 @@ export default function Home({ articles }) {
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
+
             {/* <SocialLink
               href="https://twitter.com"
               aria-label="Follow on Twitter"

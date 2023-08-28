@@ -79,6 +79,16 @@ function MobileNavItem({ href, children }) {
   )
 }
 
+function MobileNavItemVaBank({ href, children }) {
+  return (
+    <li>
+      <Popover.Button as={Link} href={href} className="block py-2 text-red-600">
+        {children}
+      </Popover.Button>
+    </li>
+  )
+}
+
 function MobileNavigation(props) {
   return (
     <Popover {...props}>
@@ -126,6 +136,8 @@ function MobileNavigation(props) {
                 <MobileNavItem href="/projects">Projects</MobileNavItem>
                 {/* <MobileNavItem href="/speaking">Speaking</MobileNavItem> */}
                 <MobileNavItem href="/articles">Blog</MobileNavItem>
+                <hr className="bg-white h-[0.5px] my-2 w-full" />
+                <MobileNavItemVaBank href="https://www.vabank.dev" target="_blank" >vabank.dev</MobileNavItemVaBank>
               </ul>
             </nav>
           </Popover.Panel>
@@ -158,6 +170,30 @@ function NavItem({ href, children }) {
   )
 }
 
+function NavItemVabank({ href, children }) {
+  let isActive = useRouter().pathname === href
+
+  return (
+    <li>
+      <Link
+        href={href}
+        target='_blank'
+        className={clsx(
+          'relative block px-3 py-2 transition text-red-800 dark:text-red-600',
+          isActive
+            ? 'text-red-500 dark:text-red-400'
+            : 'hover:text-red-500 dark:hover:text-red-400'
+        )}
+      >
+        {children}
+        {isActive && (
+          <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-red-500/0 via-red-500/40 to-indigo-500/0 dark:from-red-400/0 dark:via-red-400/40 dark:to-red-400/0" />
+        )}
+      </Link>
+    </li>
+  )
+}
+
 function DesktopNavigation(props) {
   return (
     <nav {...props}>
@@ -169,6 +205,7 @@ function DesktopNavigation(props) {
           <span className="font-semibold">Dev Projects</span>
         </NavItem>
         <NavItem href="/articles">Blog</NavItem>
+        <NavItemVabank href="https://www.vabank.dev">vabank.dev</NavItemVabank>
       </ul>
     </nav>
   )
@@ -414,14 +451,13 @@ export function Header() {
                 <MobileNavigation className="pointer-events-auto md:hidden" />
                 <DesktopNavigation className="pointer-events-auto hidden md:block" />
               </div>
-              <div className="flex items-center space-x-2 justify-end md:flex-1">
+              <div className="flex items-center justify-end space-x-2 md:flex-1">
                 <div className="pointer-events-auto">
                   <ModeToggle />
                 </div>
                 {/* <div className="text-white">FR</div>
                 <div className="text-white">ES</div> */}
               </div>
-              
             </div>
           </Container>
         </div>
