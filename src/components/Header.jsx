@@ -136,8 +136,13 @@ function MobileNavigation(props) {
                 <MobileNavItem href="/projects">Projects</MobileNavItem>
                 {/* <MobileNavItem href="/speaking">Speaking</MobileNavItem> */}
                 <MobileNavItem href="/articles">Blog</MobileNavItem>
-                <hr className="bg-white h-[0.5px] my-2 w-full" />
-                <MobileNavItemVaBank href="https://www.vabank.dev" target="_blank" >vabank.dev</MobileNavItemVaBank>
+                <hr className="my-2 h-[0.5px] w-full bg-white" />
+                <MobileNavItemVaBank
+                  href="https://www.vabank.dev"
+                  target="_blank"
+                >
+                  vabank.dev
+                </MobileNavItemVaBank>
               </ul>
             </nav>
           </Popover.Panel>
@@ -177,9 +182,9 @@ function NavItemVabank({ href, children }) {
     <li>
       <Link
         href={href}
-        target='_blank'
+        target="_blank"
         className={clsx(
-          'relative block px-3 py-2 transition text-red-800 dark:text-red-600',
+          'relative block px-3 py-2 text-red-800 transition dark:text-red-600',
           isActive
             ? 'text-red-500 dark:text-red-400'
             : 'hover:text-red-500 dark:hover:text-red-400'
@@ -202,7 +207,7 @@ function DesktopNavigation(props) {
         {/* <NavItem href="/speaking">Speaking</NavItem> */}
         <NavItem href="/resume">Résumé</NavItem>
         <NavItem href="/projects">
-          <span className="font-semibold">Dev Projects</span>
+          <span className="">Dev Projects</span>
         </NavItem>
         <NavItem href="/articles">Blog</NavItem>
         <NavItemVabank href="https://www.vabank.dev">vabank.dev</NavItemVabank>

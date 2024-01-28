@@ -3,11 +3,6 @@ import Head from 'next/head'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
 
 import logoHexagon from '@/images/logos/hexagon2.jpeg'
 import logoAirBnB from '@/images/logos/airbnb.jpeg'
@@ -27,10 +22,17 @@ import logoWUImprove from '@/images/logos/wuimprove.jpg'
 import logoCarshow from '@/images/logos/carshow.jpg'
 import logoPizzaDeliv from '@/images/logos/pizzadeliv.jpg'
 import logoCorseTorse from '@/images/logos/corsetorse.jpg'
-import logoVabankPorfolio from '@/images/logos/vabankportfolio.png'
+import logoVabankPorfolio from '@/images/logos/vabankNew.png'
 import logoNikeClone from '@/images/logos/nikeclone.png'
 import logoGrafbase from '@/images/logos/grafbaseproject.png'
 import trueWU from '@/images/logos/trueWU.png'
+import logoPayLoq from '@/images/logos/13_PayLooq.png'
+import logoChamonify from '@/images/logos/18_Chamonify.png'
+import logoBikeSpring from '@/images/logos/19_Bikeshop.png'
+import logoAcademic from '@/images/logos/2_Profesor.png'
+import logoGibbarosa from '@/images/logos/1_Gibbarosa.png'
+import logoThreads from '@/images/logos/12_Threads.png'
+import logoSaaSAS from '@/images/logos/14_SaaSAS.png'
 
 const myDev = [
   {
@@ -43,15 +45,81 @@ const myDev = [
 
 const projects = [
   {
-    name: 'Developedia - Dev showcase',
+    name: 'PayLoq - dev payments community',
     description:
-      'JSMastery project mastering Grafbase, Next.js, NextAuth and TailwindCSS',
+      'PayLoq.com is a community forum for remittance and payments industry. Built with Next.js, MongoDB, TailwindCSS, Clerk and OpenAI.',
     link: {
-      href: 'https://grafbaseproject.vercel.app/',
-      label: 'grafbaseproject.vercel.app',
+      href: 'https://www.payloq.com',
+      label: 'www.payloq.com',
     },
-    logo: logoGrafbase,
-    tags: '#graphQL, Next.js 13.4, NextAuth',
+    logo: logoPayLoq,
+    tags: '#Next.js 14, #MongoDB, #OpenAI',
+  },
+  {
+    name: 'Gibbarosa - Pre-owned luxury',
+    description:
+      'E-commerce project built on Next.js 14 and Sanity.io with Stripe, BLIK and P24 integration.',
+    link: {
+      href: 'https://gibbarosa.vabank.dev/',
+      label: 'gibbarosa.vabank.dev',
+    },
+    logo: logoGibbarosa,
+    tags: '#Next.js 14, #Sanity.io, #Payments',
+  },
+  {
+    name: 'Academic Researcher - Landing Page',
+    description:
+      'Academic researcher and professor landing page built on Next.js 14, TailwindCSS and with Framer Motion animations.',
+    link: {
+      href: 'https://www.alinamaciejewska.pl/',
+      label: 'www.alinamaciejewska.pl',
+    },
+    logo: logoAcademic,
+    tags: '#Next.js 14, #TailwindCSS',
+  },
+  {
+    name: 'Chamonify - book your stay in Haute Savoie',
+    description:
+      'Chamonify is a booking service for your stays at Chamonix Mont Blanc, France. Built with Next.js, TailwindCSS, Shadcn.',
+    link: {
+      href: 'https://chamonify.vercel.app/',
+      label: 'chamonify.vercel.app',
+    },
+    logo: logoChamonify,
+    tags: '#Next.js 14, #TailwindCSS, #Shadcn',
+  },
+  {
+    name: 'BikeSpring - dream bike shop',
+    description:
+      'BikeSpring is a true, modern online bike shop. Built with Next.js 14, Sanity.io, Stripe payments and TailwindCSS.',
+    link: {
+      href: 'https://bikespring.vercel.app/',
+      label: 'bikespring.vercel.app',
+    },
+    logo: logoBikeSpring,
+    tags: '#Next.js 14, #Sanity.io, #TailwindCSS',
+  },
+  {
+    name: 'SaaS - AI powered code, music and video generator',
+    description:
+      'SaaS project built with Next.js, OpenAI, Clerk, PrismaDB and TailwindCSS.',
+    link: {
+      href: 'https://saasas.vercel.app/',
+      label: 'saasas.vercel.app',
+    },
+    logo: logoSaaSAS,
+    tags: '#Next.js 14, #Prisma, #OpenAI',
+  },
+  {
+    name: 'Threads clone - in progress',
+    description:
+      'Threads Clone project built with Next.js, TailwindCSS, MongoDB and Clerk.',
+    link: {
+      href: 'https://mythreads-delta.vercel.app/',
+      label: 'mythreads-delta.vercel.app',
+    },
+    logo: logoThreads,
+    tags: '#Next.js 14, #Prisma, #OpenAI',
   },
   {
     name: 'Nike Clone',
@@ -62,7 +130,7 @@ const projects = [
       label: 'nikeclone-nine.vercel.app',
     },
     logo: logoNikeClone,
-    tags: '#TailwindCSS, Next.js 13.4',
+    tags: '#TailwindCSS, #Next.js 13.4',
   },
   {
     name: 'Corse Torse',
@@ -74,27 +142,17 @@ const projects = [
     logo: logoCorseTorse,
     tags: '#AI, #GPT-3.5, #NextAuth, #OpenAI',
   },
-  {
-    name: 'Carshow Rental',
-    description:
-      'Rental company website training project with RapidAPI and latest Next.js 13 API features, plus TailwindCSS.',
-    link: {
-      href: 'https://carshow-kappa.vercel.app',
-      label: 'carshow-kappa.vercel.app',
-    },
-    logo: logoCarshow,
-    tags: '#eCommerce, #rapidAPI ',
-  },
+
   {
     name: 'WU send money',
     description:
       'Improvements to WU customer journey, price engine and payout methods, with NextJS, TailwindCSS, and Zustand.',
     link: {
-      href: 'https://wuimprove.vercel.app',
-      label: 'wuimprove.vercel.app',
+      href: 'https://wuimprove2.vercel.app/',
+      label: 'wuimprove2.vercel.app',
     },
     logo: logoWUImprove,
-    tags: '#banking, #payments, #eCommerce',
+    tags: '#banking, #payments, #MongoDB',
   },
   {
     name: 'AI Weather App',
@@ -129,36 +187,7 @@ const projects = [
     logo: logoPizzaDeliv,
     tags: '#eCommerce, #food, #delivery',
   },
-  {
-    name: 'WU Bank clone',
-    description:
-      'A clone of the WU Bank Poland website with NextJS, TailwindCSS, Firebase and NextAuth',
-    link: {
-      href: 'https://truewubankpl.vercel.app/en',
-      label: 'truewubankpl.vercel.app/en',
-    },
-    logo: trueWU,
-    tags: '#banking, #eCommerce, #payments',
-  },
-  {
-    name: 'Better AirB&B',
-    description:
-      'A newer version of AirB&B with NextJS, TailwindCSS, Mapbox and Calendar.',
-    link: { href: 'https://arbb.vercel.app/', label: 'arbb.vercel.app' },
-    logo: logoAirBnB,
-    tags: '#eCommerce, #travel, #booking',
-  },
-  {
-    name: 'payIntel - new social media',
-    description:
-      'A social media and payments platform built on Firebase with NextJS, TailwindCSS, NextAuth and Recoil.',
-    link: {
-      href: 'https://pay-intel.vercel.app/',
-      label: 'pay-intel.vercel.app',
-    },
-    logo: logoPayIntel,
-    tags: '#payments, #social, #eCommerce',
-  },
+
   {
     name: 'Banking App landing page',
     description:
@@ -191,27 +220,7 @@ const projects = [
     logo: logoIkomers,
     tags: '#eCommerce, #shop, #cms',
   },
-  {
-    name: 'Parcel machine finder',
-    description:
-      'inPost parcel machine finder built with NextJS, TailwindCSS, Mapbox and DeckGL.',
-    link: {
-      href: 'https://inpostfinder.vabank.dev/map',
-      label: 'inpostfinder.vabank.dev/map',
-    },
-    logo: logoInpost,
-    tags: '#maps, #data, #visualization',
-  },
-  {
-    name: 'Food & Cuisine Blog',
-    description: 'API and search features with NextJS and TailwindCSS.',
-    link: {
-      href: 'https://fudtruck.vercel.app/',
-      label: 'fudtruck.vercel.app',
-    },
-    logo: logoFood,
-    tags: '#blog, #food, #recipes',
-  },
+
   {
     name: 'Amazon Clone',
     description:
