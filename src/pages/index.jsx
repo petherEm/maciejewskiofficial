@@ -36,6 +36,7 @@ import logoMongo from '@/images/logos/mongodb.png'
 import logoFirebase from '@/images/logos/firebase.png'
 import logoOpenAI from '@/images/logos/openai.png'
 import logoSanity from '@/images/logos/sanity.png'
+import myLogo from '@/images/logo3.png'
 
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
@@ -565,12 +566,21 @@ export default function Home({ articles }) {
     <>
       <Head>
         <title>
-          Piotr Maciejewski - Senior Leader in Finance Industry, Data Analyst,
-          Programmer.
+          Piotr Maciejewski - Senior Leader in Finance Industry, Web Developer &
+          Data Scientist, MBA, AI implementation
         </title>
         <meta
           name="description"
-          content="Maciejewski, Piotr, Full Stack Developer, experienced senior manager in Payments, data analyst."
+          content="Maciejewski, Piotr, Full Stack Developer, experienced senior manager in Payments,  Web Developer &
+          Data Scientist, MBA, AI implementation"
+        />
+
+        <meta property="og:image" content={myLogo.src} />
+
+        <meta
+          property="og:title"
+          content="Maciejewski, Piotr, Full Stack Developer, experienced senior manager in Payments,  Web Developer &
+          Data Scientist, MBA, AI implementation"
         />
       </Head>
       <Container className="mt-9">
