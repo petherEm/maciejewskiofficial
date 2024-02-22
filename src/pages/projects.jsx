@@ -33,6 +33,8 @@ import logoAcademic from '@/images/logos/2_Profesor.png'
 import logoGibbarosa from '@/images/logos/1_Gibbarosa.png'
 import logoThreads from '@/images/logos/12_Threads.png'
 import logoSaaSAS from '@/images/logos/14_SaaSAS.png'
+import logoImaginify from '@/images/logos/20_Imaginify.png'
+import logoEventeror from '@/images/logos/21_Eventeror.png'
 
 const myDev = [
   {
@@ -98,6 +100,28 @@ const projects = [
     },
     logo: logoBikeSpring,
     tags: '#Next.js 14, #Sanity.io, #TailwindCSS',
+  },
+  {
+    name: 'Imaginify - AI Image playground',
+    description:
+      'Testing CloudinaryAI, MongoDB, Clerk with Next.js 14 and TailwindCSS. Imaginify is an AI playground for image processing and manipulation.',
+    link: {
+      href: 'https://imaagic.vercel.app/',
+      label: 'imaagic.vercel.app/',
+    },
+    logo: logoImaginify,
+    tags: '#Next.js 14, #MongoDB, #Clerk',
+  },
+  {
+    name: 'Evently - event management',
+    description:
+      'Evently is a modern event platform built with Next.js, MongoDB, TailwindCSS and Clerk.',
+    link: {
+      href: 'https://eventorex.vercel.app/',
+      label: 'eventorex.vercel.app/',
+    },
+    logo: logoEventeror,
+    tags: '#Next.js 14, #MongoDB, #Clerk',
   },
   {
     name: 'SaaS - AI powered code, music and video generator',
